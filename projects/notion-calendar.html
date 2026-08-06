@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notion Calendar Redesign | Justin Fung</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="wrap project-layout">
+
+    <aside class="project-toc">
+      <a class="back-link" href="../index.html">&larr; Back to Work</a>
+      <ol>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+      </ol>
+    </aside>
+
+    <article>
+      <p class="project-eyebrow">NOTION CALENDAR REDESIGN &bull; IVEY PRODUCT SOCIETY 2026</p>
+      <h1 class="project-title">Notion Calendar Redesign</h1>
+      <p style="font-size: 1.15rem; color: var(--color-text-muted); margin-top: -20px; margin-bottom: 32px; line-height: 1.4;">
+        Inline property display for Notion Calendar
+      </p>
+
+      <!-- Hero Screenshot directly from uploaded Slide Deck -->
+      <div class="project-hero">
+        <img 
+          src="media/notion-calendar/hero-slide.png" 
+          alt="Notion Calendar PRD Hero Presentation Slide" 
+          style="width: 100%; border-radius: var(--radius); border: 1px solid var(--color-border); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);"
+        />
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Product Fellow &bull; Author of Full PRD</dd>
+        </div>
+        <div>
+          <dt>Timeline</dt>
+          <dd>Jan 2026 – Apr 2026 (Ivey Product Society)</dd>
+        </div>
+        <div>
+          <dt>Output</dt>
+          <dd>Full PRD &bull; User Flows &bull; Industry Pitch</dd>
+        </div>
+        <div>
+          <dt>Frameworks</dt>
+          <dd>Figma, User Story Mapping, Prioritization, Value Map</dd>
+        </div>
+      </dl>
+
+      <!-- SECTION 1: CHALLENGE -->
+      <section id="challenge" class="project-section">
+        <p class="project-eyebrow">The Challenge</p>
+        <h2>Bridging the gap between Notion databases and Google Calendar.</h2>
+        <p>
+          As a Product Fellow at the Ivey Product Society, I identified a core friction point in Notion's product ecosystem: despite Notion's strength as a database-driven productivity powerhouse, users had little incentive to abandon Google Calendar because Notion Calendar felt completely disconnected from their existing Notion database workflows.
+        </p>
+        <p>
+          My challenge was to design an inline property surfacing system and property-based color-coding architecture—without overhauling Notion's core database architecture—allowing users to view and prioritize tasks directly from their calendar.
+        </p>
+      </section>
+
+      <!-- SECTION 2: PROBLEM -->
+      <section id="problem" class="project-section">
+        <p class="project-eyebrow">The Problem</p>
+        <h2>Invisible database context and context-switching fatigue.</h2>
+        <p>
+          Students and professionals live in Notion to track assignments, projects, and task databases. However, when opening Notion Calendar, event cards displayed <strong>zero database context</strong>—hiding critical properties like priority, status, due dates, and course codes.
+        </p>
+        
+        <div class="insight-grid" style="margin-bottom: 24px;">
+          <div class="insight-card">
+            <h3>Hidden Database Context</h3>
+            <p>Users were forced to click into every single event card individually just to understand priority or status.</p>
+          </div>
+          <div class="insight-card">
+            <h3>Context-Switching Fatigue</h3>
+            <p>Task tracking and scheduling were split across Google Calendar, Notion dashboards, and external apps.</p>
+          </div>
+          <div class="insight-card">
+            <h3>No Custom Color Coding</h3>
+            <p>Google Calendar could only color-code by calendar source, failing to reflect database property urgency.</p>
+          </div>
+        </div>
+
+        <blockquote style="border-left: 3px solid var(--color-accent); padding-left: 18px; margin: 24px 0; font-style: italic; color: var(--color-text-muted); font-size: 1.05rem;">
+          "I already live in Notion, but I haven’t switched from Google Calendar because it just doesn’t feel connected to the rest of my workflow the way I expected."
+        </blockquote>
+
+        <!-- Problem Slide Deck Screenshots -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 28px 0;">
+          <div>
+            <img src="media/notion-calendar/problem-invisible.png" alt="Notion Calendar Problem: Properties are almost invisible" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Properties require opening full event page popups</span>
+          </div>
+          <div>
+            <img src="media/notion-calendar/problem-color.png" alt="Notion Calendar Problem: Cannot change color by property" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Calendar source color lock limits priority visual hierarchy</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SOLUTION -->
+      <section id="solution" class="project-section">
+        <p class="project-eyebrow">The Solution</p>
+        <h2>Inline property display and property-based color coding.</h2>
+        <p>
+          I authored a comprehensive Product Requirement Document (PRD) detailing two core feature enhancements designed to keep users inside Notion's ecosystem:
+        </p>
+
+        <!-- Solution Side-by-Side Comparison Slide Screenshot -->
+        <div style="margin: 28px 0;">
+          <img src="media/notion-calendar/solution-comparison.png" alt="Notion Calendar Solution Comparison" style="width: 100%; border-radius: var(--radius); border: 1px solid var(--color-border); box-shadow: 0 4px 20px rgba(0,0,0,0.04);" />
+          <span style="font-size: 13px; color: var(--color-text-muted); display: block; margin-top: 8px; font-style: italic; text-align: center;">Before vs. After: Standard calendar cards (left) vs. Enhanced Inline Property Display &amp; Color Coding (right).</span>
+        </div>
+
+        <div class="insight-grid" style="margin-top: 24px; margin-bottom: 28px;">
+          <div class="insight-card">
+            <h3>1. Inline Database Property Display</h3>
+            <p>Exposes selected database properties as visible badges directly on calendar event cards via a "Show on Calendar" toggle within the event detail panel.</p>
+          </div>
+          <div class="insight-card">
+            <h3>2. Property-Based Color Coding</h3>
+            <p>Allows users to assign custom colors to property values (e.g. status, priority level, course code), replacing calendar-source color limitations.</p>
+          </div>
+          <div class="insight-card">
+            <h3>3. Urgency-Aware Badging</h3>
+            <p>Surfaces due date urgency visually on event badges—distinguishing overdue, due today, and upcoming deadlines by color.</p>
+          </div>
+        </div>
+
+        <!-- Property Visibility & Inline Display Screenshots -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0;">
+          <div>
+            <img src="media/notion-calendar/property-panel.png" alt="Property Visibility Panel Mockup" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Sidebar: Customizing Shown vs. Hidden database properties</span>
+          </div>
+          <div>
+            <img src="media/notion-calendar/inline-display.png" alt="Inline Property Display and Color Coding" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Calendar View: Inline status badges and property color coding</span>
+          </div>
+        </div>
+
+        <!-- Interactive Notion Calendar Feature Previews -->
+        <div class="interactive-preview-widget">
+          <div class="preview-header">
+            <div class="preview-title-group">
+              <span class="preview-badge">Interactive PRD Prototype</span>
+              <h3>Live Interface &amp; Feature Previews</h3>
+            </div>
+            <div class="preview-tabs">
+              <button class="tab-btn active" data-tab="cards">🗓️ Inline Event Badges</button>
+              <button class="tab-btn" data-tab="toggle">⚙️ Property Visibility Toggle</button>
+              <button class="tab-btn" data-tab="valuemap">📊 Value Map &amp; Need Matrix</button>
+            </div>
+          </div>
+
+          <!-- TAB 1: Inline Event Badges -->
+          <div class="tab-content active" id="tab-cards">
+            <p style="font-size: 13px; color: var(--color-text-muted); margin-bottom: 16px;">
+              Simulated Notion Calendar view showing inline database property badges and custom property color-coding:
+            </p>
+            <div class="mock-results" style="gap: 14px;">
+
+              <div class="mock-result-item" style="border-left: 4px solid #5cb85c; background: #f9fdf9;">
+                <div class="result-header">
+                  <strong style="font-size: 15px;">CS2208 Lecture</strong>
+                  <span class="res-dist">12:30 PM – 2:30 PM</span>
+                </div>
+                <span class="res-meta">Natural Sciences Centre &bull; Course: CS2208</span>
+              </div>
+
+              <div class="mock-result-item" style="border-left: 4px solid #007bff; background: #f4f8ff;">
+                <div class="result-header">
+                  <strong style="font-size: 15px;">Do 2257 Case</strong>
+                  <span class="res-dist">3:00 PM – 4:30 PM</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center; margin-top: 6px; flex-wrap: wrap;">
+                  <span style="background: #007bff; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600;">● In Progress</span>
+                  <span style="background: #fce4ec; color: #c2185b; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600;">🕒 Due Today @ 6:30 PM</span>
+                  <span style="font-size: 12px; color: var(--color-text-muted);">BUS2257</span>
+                </div>
+              </div>
+
+              <div class="mock-result-item" style="border-left: 4px solid #f0ad4e; background: #fffdf9;">
+                <div class="result-header">
+                  <strong style="font-size: 15px;">Do 2208 Homework</strong>
+                  <span class="res-dist">2:30 PM – 4:00 PM</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center; margin-top: 6px; flex-wrap: wrap;">
+                  <span style="background: #6c757d; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600;">● Not Started</span>
+                  <span style="background: #e8f5e9; color: #2e7d32; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600;">🕒 Due Next Tuesday @ 11:59 PM</span>
+                  <span style="font-size: 12px; color: var(--color-text-muted);">CS2208</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: Property Visibility Toggle Mockup -->
+          <div class="tab-content" id="tab-toggle">
+            <div class="preview-card-grid">
+              <div class="mock-modal" style="background: #ffffff;">
+                <h4 style="margin: 0 0 12px; font-size: 15px; color: var(--color-text);">← Property Visibility Sidebar</h4>
+                <p style="font-size: 12px; margin-bottom: 12px;">Toggle which database properties appear inline on calendar event cards:</p>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+                  <div style="display: flex; justify-content: space-between; padding: 6px; background: #f8f9fa; border-radius: 6px;">
+                    <span>⚓ Name</span>
+                    <span style="color: var(--color-accent); font-weight: 600;">👁️ Shown</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding: 6px; background: #f8f9fa; border-radius: 6px;">
+                    <span>❇️ Status</span>
+                    <span style="color: var(--color-accent); font-weight: 600;">👁️ Shown</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding: 6px; background: #f8f9fa; border-radius: 6px;">
+                    <span>📑 Course</span>
+                    <span style="color: var(--color-accent); font-weight: 600;">👁️ Shown</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding: 6px; background: #f8f9fa; border-radius: 6px;">
+                    <span>📅 DUE Date</span>
+                    <span style="color: var(--color-accent); font-weight: 600;">👁️ Shown</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding: 6px; opacity: 0.5;">
+                    <span>🗓️ DO Date</span>
+                    <span>🙈 Hidden</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding: 6px; opacity: 0.5;">
+                    <span>🏷️ Type</span>
+                    <span>🙈 Hidden</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mock-results">
+                <div class="mock-result-item">
+                  <strong>Zero-Click Context Access</strong>
+                  <p style="font-size: 13px; color: var(--color-text-muted); margin-top: 6px; line-height: 1.5;">
+                    By controlling property visibility in the sidebar, users see priority, status, and course code without having to open individual Notion page popups.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Value Map & Need Matrix -->
+          <div class="tab-content" id="tab-valuemap">
+            <div class="mock-subbar">
+              <h4 style="margin: 0 0 12px; font-size: 15px;">PRD Need &amp; Opportunity Analysis</h4>
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+                <div style="display: flex; justify-content: space-between; padding: 8px 12px; background: #eafaf1; border-radius: 6px; border-left: 3px solid #218838;">
+                  <span>1. Prevent unrealistic daily schedules before they happen</span>
+                  <strong style="color: #218838;">High Importance / Low Sat &rarr; Top Opportunity</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 12px; background: #eafaf1; border-radius: 6px; border-left: 3px solid #218838;">
+                  <span>2. Clearly distinguish between events &amp; actionable tasks</span>
+                  <strong style="color: #218838;">High Importance &rarr; Opportunity</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 8px 12px; background: #eafaf1; border-radius: 6px; border-left: 3px solid #218838;">
+                  <span>3. Make high-priority items visually impossible to ignore</span>
+                  <strong style="color: #218838;">High Importance / Low Sat &rarr; Top Opportunity</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px;">PRD Key User Flows</h3>
+        <p>
+          To ensure implementation feasibility without altering Notion's database backend, I mapped out the end-to-end logic for database-to-calendar surfacing and property color assignment:
+        </p>
+
+        <!-- Key Flows Screenshots -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 24px 0;">
+          <div>
+            <img src="media/notion-calendar/flow-surfacing.png" alt="Flow 1: Database-to-Calendar Surfacing Flowchart" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Flow 1: Database-to-Calendar Surfacing Logic</span>
+          </div>
+          <div>
+            <img src="media/notion-calendar/flow-customization.png" alt="Flow 2: Property Display & Colour Customization Flowchart" style="width: 100%; border-radius: 10px; border: 1px solid var(--color-border);" />
+            <span style="font-size: 12px; color: var(--color-text-muted); display: block; margin-top: 6px; text-align: center;">Flow 2: Property Display &amp; Color Customization Logic</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: OUTCOME -->
+      <section id="outcome" class="project-section">
+        <p class="project-eyebrow">The Outcome</p>
+        <h2>Full PRD delivered and pitched to industry professionals.</h2>
+        <p>
+          I completed and delivered the full PRD document—mapping out user personas, non-goals, property-display user flows, customer job maps, and success metrics.
+        </p>
+
+        <!-- Value Map Table Screenshot -->
+        <div style="margin: 28px 0;">
+          <img src="media/notion-calendar/value-map.png" alt="PRD Value Map & Opportunity Analysis Table" style="width: 100%; border-radius: var(--radius); border: 1px solid var(--color-border); box-shadow: 0 4px 20px rgba(0,0,0,0.04);" />
+          <span style="font-size: 13px; color: var(--color-text-muted); display: block; margin-top: 8px; font-style: italic; text-align: center;">PRD Value Map: Customer Needs, Importance, Satisfaction &amp; Opportunity Conclusions.</span>
+        </div>
+
+        <div class="insight-grid" style="margin-top: 24px; margin-bottom: 24px;">
+          <div class="insight-card">
+            <h3>1. Adoption &amp; Retention</h3>
+            <p>Tracking the reduction in user churn from Notion Calendar back to Google Calendar.</p>
+          </div>
+          <div class="insight-card">
+            <h3>2. Feature Engagement</h3>
+            <p>Measuring the percentage of linked database events with active "Show on Calendar" property toggles.</p>
+          </div>
+          <div class="insight-card">
+            <h3>3. Task Visibility</h3>
+            <p>Quantifying the reduction in clicks required to access task due dates and priority status.</p>
+          </div>
+        </div>
+
+        <p>
+          At the conclusion of the fellowship, I presented the concept during Ivey Product Society's Product Review Day, sharpening PM fundamentals in product requirement definition, user story mapping, and feature prioritization.
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

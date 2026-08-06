@@ -1,0 +1,115 @@
+/* Masqualero font family — used as the site's serif (see --font-serif in theme.css) */
+
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-DemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-DemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero";
+  src: url("../fonts/Masqualero-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Decorative variants — not mapped to a weight, use via font-family directly if wanted */
+@font-face {
+  font-family: "Masqualero ExtraBlack";
+  src: url("../fonts/Masqualero-ExtraBlack.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero ExtraBlack";
+  src: url("../fonts/Masqualero-ExtraBlackItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Masqualero Stencil";
+  src: url("../fonts/MasqualeroStencil-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Masqualero Groove";
+  src: url("../fonts/MasqualeroGroove-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Circular Std — the site's sans (see --font-sans in theme.css) */
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}

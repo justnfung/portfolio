@@ -1,0 +1,44 @@
+/* ============================================================
+   THEME — edit this file to reskin the entire site.
+   Everything else (layout.css) just references these variables.
+   ============================================================ */
+
+:root {
+  /* --- Base colors --- */
+  --color-bg: #fafcfd;
+  --color-surface: #f1f3f6;
+  --color-text: #32404f;
+  --color-text-muted: #7a8794;
+  --color-border: #e3e8ed;
+
+  /* --- Accent palette ---
+     Swap these three to change the whole site's mood.
+     They drive nav highlights, links, and the hero gradients below. */
+  --color-accent: #5E8D0E;   /* Punchy Golden Olive */
+  --color-accent-2: #84B827; /* Vibrant Leaf */
+  --color-accent-3: #3E6305; /* Deep Forest Olive */
+  --color-accent-light: #F2F7E9; /* Luminous complementary light green highlight */
+  --color-accent-subtle: rgba(94, 141, 14, 0.09); /* Soft translucent green tint */
+
+  /* --- Gradients built from the accent palette ---
+     Used on project card thumbnails and case-study hero banners.
+     Add more --gradient-heroN entries and reference them per-project
+     if you want each case study to have its own mix. */
+  --gradient-hero-1: linear-gradient(135deg, #5E8D0E 0%, #84B827 55%, #3E6305 100%);
+  --gradient-hero-2: linear-gradient(135deg, #3E6305 0%, #84B827 50%, #5E8D0E 100%);
+  --gradient-hero-3: linear-gradient(160deg, #84B827 0%, #5E8D0E 60%, #3E6305 100%);
+
+  /* --- Typography --- */
+  --font-serif: "Masqualero", Georgia, "Times New Roman", serif;
+  --font-sans: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
+
+  /* --- Scale --- */
+  --size-h1: clamp(2.25rem, 5vw, 3.5rem);
+  --size-h2: clamp(1.5rem, 3vw, 2rem);
+  --radius: 14px;
+
+  /* --- Layout --- */
+  --content-max: 1100px;
+  --sidebar-width: 260px;
+}

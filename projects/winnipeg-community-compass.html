@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winnipeg Community Compass | Justin Fung</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main class="wrap project-layout">
+
+    <aside class="project-toc">
+      <a class="back-link" href="../index.html">&larr; Back to Work</a>
+      <ol>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+      </ol>
+    </aside>
+
+    <article>
+      <p class="project-eyebrow">WINNIPEG COMMUNITY COMPASS &bull; SUMMER 2025</p>
+      <h1 class="project-title">Winnipeg Community Compass</h1>
+      <p style="font-size: 1.15rem; color: var(--color-text-muted); margin-top: -20px; margin-bottom: 32px; line-height: 1.4;">
+        A self-taught, 7-day build that connected 5,000+ Manitobans to emergency resources, reached 1.3M+ views on national news, and sparked my passion for product management.
+      </p>
+
+      <div class="project-hero">
+        <video autoplay loop muted playsinline>
+          <source src="media/winnipeg-community-compass/winnipeg-compass.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Creator &amp; Solo Full-Stack Developer</dd>
+        </div>
+        <div>
+          <dt>Timeline</dt>
+          <dd>Summer 2025 (1 Week Sprint)</dd>
+        </div>
+        <div>
+          <dt>Reach &amp; Impact</dt>
+          <dd>5,000+ Evacuees &bull; 1.3M+ YouTube Views</dd>
+        </div>
+        <div>
+          <dt>Tech Stack</dt>
+          <dd>HTML, CSS, JavaScript, Leaflet.js, Geolocation</dd>
+        </div>
+      </dl>
+
+      <!-- SECTION 1: CHALLENGE -->
+      <section id="challenge" class="project-section">
+        <p class="project-eyebrow">The Challenge</p>
+        <h2>Responding to a provincial emergency in under 7 days.</h2>
+        <p>
+          Manitoba's 2025 wildfire state of emergency displaced thousands of residents from their homes with minimal notice. Thousands of Winnipeggers, in true Friendly Manitoba™ spirit, piled in donations of pet food, clothes, and supplies to support wildfire evacuees.
+        </p>
+      </section>
+
+      <!-- SECTION 2: PROBLEM -->
+      <section id="problem" class="project-section">
+        <p class="project-eyebrow">The Problem</p>
+        <h2>Critical information fragmentation when stakes were highest.</h2>
+        <p>
+          As one of these willing donors, I quickly spotted a problem: critical wildfire aid information was completely scattered across unorganized Facebook groups, Reddit threads, and community forums.
+        </p>
+        <div class="insight-grid" style="margin-bottom: 20px;">
+          <div class="insight-card">
+            <h3>Scattered Data</h3>
+            <p>Donation points and relief hubs were buried across dozens of Facebook posts with no map visualization.</p>
+          </div>
+          <div class="insight-card">
+            <h3>High Friction</h3>
+            <p>Existing platforms required logins or app downloads, inconvenient for users looking for places to donate in a pinch.</p>
+          </div>
+          <div class="insight-card">
+            <h3>Zero Central Verification</h3>
+            <p>Community-run businesses accepting supplies had no centralized channel to broadcast open hours or urgent needs.</p>
+          </div>
+        </div>
+        <p>
+          Experiencing this frustration firsthand while trying to locate businesses accepting pet food donations, I realized that there was an opportunity to build a centralized, instant-access solution myself.
+        </p>
+      </section>
+
+      <!-- SECTION 3: SOLUTION -->
+      <section id="solution" class="project-section">
+        <p class="project-eyebrow">The Solution</p>
+        <h2>Zero-barrier interactive mapping.</h2>
+        <p>
+          I built the <strong>Winnipeg Community Compass</strong>—a lightweight, mobile-optimized interactive map designed for maximum clarity and speed under crisis conditions.
+        </p>
+        
+        <div class="insight-grid" style="margin-top: 24px; margin-bottom: 24px;">
+          <div class="insight-card">
+            <h3>Zero Sign-up Barriers</h3>
+            <p>Eliminated all logins, downloads, and form friction so families in high-stress situations could access open aid instantly.</p>
+          </div>
+          <div class="insight-card">
+            <h3>Client-Side Leaflet.js</h3>
+            <p>Selected open-source Leaflet.js vector mapping to ensure map tiles rendered fast even on weak cellular networks during regional strain.</p>
+          </div>
+          <div class="insight-card">
+            <h3>Real-Time Dynamic Filters</h3>
+            <p>Categorized drop-off points, food banks, and shelters dynamically on the client side with zero page reload latency.</p>
+          </div>
+        </div>
+
+        <!-- Live Map Scroll Demo Video -->
+        <div class="project-demo-video">
+          <video autoplay loop muted playsinline controls>
+            <source src="media/winnipeg-community-compass/compass-demo.mov" type="video/mp4" />
+            <source src="media/winnipeg-community-compass/compass-demo.mov" type="video/quicktime" />
+          </video>
+          <span class="video-caption">Map Demo (Geolocation feature not shown)</span>
+        </div>
+
+        <!-- Interactive Website Features Preview -->
+        <div class="interactive-preview-widget">
+          <div class="preview-header">
+            <div class="preview-title-group">
+              <span class="preview-badge">Winnipeg Community Compass
+              </span>
+              <h3>Live Interface &amp; Feature Previews</h3>
+            </div>
+            <div class="preview-tabs">
+              <button class="tab-btn active" data-tab="geolocation">📍 Geolocation &amp; Proximity</button>
+              <button class="tab-btn" data-tab="filtering">🏷️ Dynamic Resource Filters</button>
+              <button class="tab-btn" data-tab="community">🤝 Community Action Hub</button>
+            </div>
+          </div>
+
+          <!-- TAB 1: Geolocation & Distance Calculation -->
+          <div class="tab-content active" id="tab-geolocation">
+            <div class="preview-card-grid">
+              <div class="mock-modal">
+                <div class="mock-modal-header">
+                  <div class="mock-icon-heart">📍</div>
+                  <h4>Want to Find Help Near You?</h4>
+                </div>
+                <p>Share your location to calculate real-time distance (km) to nearby shelters, donation points, and services.</p>
+                <div class="mock-actions">
+                  <span class="mock-btn primary">✓ Location Enabled (User: Winnipeg Center)</span>
+                </div>
+              </div>
+              <div class="mock-results">
+                <div class="mock-result-item">
+                  <div class="result-header">
+                    <span class="res-tag red">Emergency Shelter</span>
+                    <span class="res-dist">0.8 km away</span>
+                  </div>
+                  <strong>RBC Convention Centre Evacuation Hub</strong>
+                  <span class="res-meta">375 York Ave &bull; Open 24/7 &bull; Cots &amp; Hot Meals Available</span>
+                </div>
+                <div class="mock-result-item">
+                  <div class="result-header">
+                    <span class="res-tag green">Donation Point</span>
+                    <span class="res-dist">1.4 km away</span>
+                  </div>
+                  <strong>Winnipeg Fire Paramedic Supply Drop</strong>
+                  <span class="res-meta">254 Portage Ave &bull; Accepting Water, Diapers &amp; Toiletries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Dynamic Category Filtering -->
+          <div class="tab-content" id="tab-filtering">
+            <div class="filter-controls">
+              <span class="filter-label">Filter Resources:</span>
+              <button class="category-chip active" data-filter="all">All (4)</button>
+              <button class="category-chip" data-filter="shelter">🔴 Emergency Shelter</button>
+              <button class="category-chip" data-filter="donation">🟢 Donation Point</button>
+              <button class="category-chip" data-filter="animal">🟡 Animal Shelter</button>
+              <button class="category-chip" data-filter="event">🔵 Community Event</button>
+            </div>
+            <div class="mock-filter-list">
+              <div class="mock-resource-card" data-cat="shelter">
+                <div class="res-left">
+                  <span class="badge-dot red"></span>
+                  <div>
+                    <strong>RBC Convention Centre Shelter</strong>
+                    <span>Emergency Shelter &bull; Open 24/7 &bull; 0.8 km</span>
+                  </div>
+                </div>
+                <span class="res-status">Active &bull; Verified</span>
+              </div>
+              <div class="mock-resource-card" data-cat="donation">
+                <div class="res-left">
+                  <span class="badge-dot green"></span>
+                  <div>
+                    <strong>Main Street Project Supply Hub</strong>
+                    <span>Donation Point &bull; 8:00 AM - 8:00 PM &bull; 1.2 km</span>
+                  </div>
+                </div>
+                <span class="res-status">Urgent Need: Water &amp; Blankets</span>
+              </div>
+              <div class="mock-resource-card" data-cat="animal">
+                <div class="res-left">
+                  <span class="badge-dot yellow"></span>
+                  <div>
+                    <strong>Winnipeg Humane Society Evacuee Care</strong>
+                    <span>Animal Shelter &bull; Pet Lodging Available &bull; 3.1 km</span>
+                  </div>
+                </div>
+                <span class="res-status">Pet Boarding Open</span>
+              </div>
+              <div class="mock-resource-card" data-cat="event">
+                <div class="res-left">
+                  <span class="badge-dot blue"></span>
+                  <div>
+                    <strong>Community Food Drive &amp; Hot Meals</strong>
+                    <span>Community Event &bull; Today 12:00 PM &bull; 1.9 km</span>
+                  </div>
+                </div>
+                <span class="res-status">Free Meal Service</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Community Submissions & Action Bar -->
+          <div class="tab-content" id="tab-community">
+            <div class="mock-subbar">
+              <div class="subbar-buttons">
+                <span class="sub-btn blue">+ Submit a Resource</span>
+                <span class="sub-btn red">♥ Red Cross Donations</span>
+                <span class="sub-btn light">ⓘ Wildfire Resources</span>
+              </div>
+              <p class="subbar-desc">Empowered everyday citizens, small businesses, and relief workers to crowdsource verified drop-off points in real time via OpenSheet Google Integration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: OUTCOME -->
+      <section id="outcome" class="project-section">
+        <p class="project-eyebrow">The Outcome</p>
+        <h2>5,000+ Manitobans helped, 1.3M+ views, and provincial recognition.</h2>
+        <p>
+          What began as a 7-day personal build quickly became an essential community hub during the wildfires, helping over <strong>5,000 wildfire evacuees and donors</strong> find aid and shelter.
+        </p>
+
+        <!-- Gmail-Style Email Testimonial Carousel -->
+        <div class="email-carousel-container">
+          <div class="email-carousel">
+
+            <div class="email-card active" data-index="0">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #2b7a9e;">J</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Jenna T.</span>
+                    </div>
+                    <span class="gmail-date">Thu, Jun 5, 2025, 7:53 PM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                </div>
+              </div>
+              <div class="gmail-body">Hi!
+
+Evacuee here, people in Winnipeg are loving the community compass!! Awesome work. Just a thought to put out there, I’ve heard they could really use something like this in Niagara Falls as well with evacuees now being sent there!
+
+I appreciate the hard work you’re doing, we’re all super grateful :)</div>
+            </div>
+
+            <div class="email-card" data-index="1">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #e8823c;">M</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Ms. M (My AP English teacher!)</span>
+                    </div>
+                    <span class="gmail-date">Thu, Jun 5, 2025, 11:47 AM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                </div>
+              </div>
+              <div class="gmail-body">Justin,
+
+Mr. D. just shared with us that you made the news! What amazing work. Please know that we are all so proud of you.
+
+Best,
+Ms. M
+
+P.S. I’m impressed by how articulate you are as well. This is surely your AP training! 😊</div>
+            </div>
+
+            <div class="email-card" data-index="2">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #16537e;">M</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Mike Moroz</span>
+                      <span class="gmail-sender-email">&lt;Mike.Moroz@manitoba.ca&gt;</span>
+                    </div>
+                    <span class="gmail-date">Wed, Jun 4, 2025, 11:13 PM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                  <span class="gmail-badge">Minister of Innovation and New Technology &bull; Manitoba</span>
+                </div>
+              </div>
+              <div class="gmail-body">Hey Justin, it’s Mike Moroz. I’m the Minister of Innovation and New Technology here in Manitoba. I just saw the story about your incredible website on CBC. Congratulations! Thank you for your service.
+
+I’d like to see if there’s a time to meet you in the next few days. Is that something you might be open to? I’d just like to thank you directly on behalf of the province.</div>
+            </div>
+
+            <div class="email-card" data-index="3">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #7c3aed;">N</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Nellie K.</span>
+                    </div>
+                    <span class="gmail-date">Thu, Jun 5, 2025, 10:34 AM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                </div>
+              </div>
+              <div class="gmail-body">Hi Justin,
+
+Miigwetch/thank you from working from your heart!
+
+In kindness,  
+Nellie K. RPN, BScPN, M.Ed</div>
+            </div>
+
+            <div class="email-card" data-index="4">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #84b827;">L</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Linda P.</span>
+                    </div>
+                    <span class="gmail-date">Tue, Jun 3, 2025, 10:30 AM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                </div>
+              </div>
+              <div class="gmail-body">Thanks! I think your website is a great idea! What a great way to help out! I heard about it when listening to CBC this morning.
+
+Have a good day,
+Linda</div>
+            </div>
+
+            <div class="email-card" data-index="5">
+              <div class="gmail-header">
+                <div class="gmail-avatar" style="background: #5e8d0e;">D</div>
+                <div class="gmail-meta">
+                  <div class="gmail-meta-top">
+                    <div>
+                      <span class="gmail-sender-name">Deborah C.</span>
+                    </div>
+                    <span class="gmail-date">Wed, Jun 4, 2025, 11:22 PM</span>
+                  </div>
+                  <span class="gmail-to">to me</span>
+                </div>
+              </div>
+              <div class="gmail-body">What a wonderful thing you did</div>
+            </div>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" aria-label="Previous email">&larr;</button>
+            <div class="carousel-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+            </div>
+            <button class="carousel-btn carousel-next" aria-label="Next email">&rarr;</button>
+          </div>
+        </div>
+
+        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px;">National news coverage and 1.3M+ views</h3>
+        <p>
+CBC News featured my project on consecutive nights of The National: the first night showcasing the website, and the second showcasing my parents’ – who had no clue I had even made this in the first place – shell-shocked reaction to seeing their son on the news (my Mom thought I deepfaked myself onto the TV!).         </p>
+
+        <!-- Embedded YouTube Video Player -->
+        <div class="video-responsive">
+          <iframe 
+            src="https://www.youtube.com/embed/smgbfZJHwZY" 
+            title="CBC The National Broadcast - Winnipeg Community Compass" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px;">Meeting Manitoba's Minister of Innovation</h3>
+        <p>
+          Following the CBC broadcast, Manitoba's Minister of Innovation and New Technology, <strong>Mike Moroz</strong>, reached out directly to thank me on behalf of the province. I met with his team to discuss my platform and learn more about the province’s crisis information site MBReady, which launched in the weeks following.        </p>
+        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px;">Sparking My Product Management Career</h3>
+        <p>
+          Experiencing how rapid execution, technical problem-solving, and empathetic solutions directly helped thousands of real people sparked a feeling I've been chasing in everything I do, ever since: to lead and build products at the intersection of technology, business, and human impact.
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.rachelchen.tech)",
+      "Read(//Users/justinfung/Downloads/Masqualero Font Family/**)",
+      "Bash(python3 -c \"import fontTools; print\\(fontTools.__version__\\)\")",
+      "Bash(pkill -f \"http.server 8791\")",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(curl -sI http://localhost:8080/index.html)",
+      "Bash(echo \"--- ~/Library/Fonts ---\"; ls \"$HOME/Library/Fonts\" 2>/dev/null | head -100 *)",
+      "Bash(cp '/Users/justinfung/Downloads/Poppins 2/Poppins-Regular.ttf' /private/tmp/claude-501/-Users-justinfung-Coding-Portfolio/afaed6e4-f6f4-4c3a-8c61-8af194528812/scratchpad/fonts/)",
+      "Bash(cp '/Users/justinfung/Downloads/Poppins 2/Poppins-Medium.ttf' /private/tmp/claude-501/-Users-justinfung-Coding-Portfolio/afaed6e4-f6f4-4c3a-8c61-8af194528812/scratchpad/fonts/)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-Book.otf /private/tmp/claude-501/-Users-justinfung-Coding-Portfolio/afaed6e4-f6f4-4c3a-8c61-8af194528812/scratchpad/fonts/)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-Medium.otf /private/tmp/claude-501/-Users-justinfung-Coding-Portfolio/afaed6e4-f6f4-4c3a-8c61-8af194528812/scratchpad/fonts/)",
+      "Bash(cp /Users/justinfung/Library/Fonts/SpotifyMix-Regular.ttf /private/tmp/claude-501/-Users-justinfung-Coding-Portfolio/afaed6e4-f6f4-4c3a-8c61-8af194528812/scratchpad/fonts/)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-Book.otf /Users/justinfung/Coding/Portfolio/fonts/CircularStd-Book.otf)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-BookItalic.otf /Users/justinfung/Coding/Portfolio/fonts/CircularStd-BookItalic.otf)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-Medium.otf /Users/justinfung/Coding/Portfolio/fonts/CircularStd-Medium.otf)",
+      "Bash(cp /Users/justinfung/Downloads/circular-std-font-family/CircularStd-Bold.otf /Users/justinfung/Coding/Portfolio/fonts/CircularStd-Bold.otf)",
+      "Bash(pkill -f \"http.server 8792\")",
+      "Bash(pkill -f \"http.server 8080\")"
+    ]
+  }
+}
