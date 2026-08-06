@@ -315,3 +315,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Q&A Accordion Handler for About Section
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".qa-question").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const parent = btn.closest(".qa-item");
+      if (parent) {
+        parent.classList.toggle("open");
+      }
+    });
+  });
+});
