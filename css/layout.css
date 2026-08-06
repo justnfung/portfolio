@@ -26,9 +26,13 @@ body {
   color: #213306;
 }
 
-/* Custom Green Precision Ring Cursor */
+/* Custom Green Precision Ring Cursor - Universal Hide System */
 @media (pointer: fine) {
-  body, a, button, input, select, textarea, [role="button"], .work-row, .copy-email-btn {
+  html, body, *, *::before, *::after,
+  a, a:hover, a:active, a:focus, a:visited,
+  button, button:hover, button:active, button:focus,
+  input, select, textarea, [role="button"],
+  .work-row, .copy-email-btn {
     cursor: none !important;
   }
 }
@@ -78,8 +82,16 @@ img {
   display: block;
 }
 
+#site-header,
+#site-footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .wrap {
   max-width: var(--content-max);
+  width: 100%;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -92,6 +104,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100%;
 }
 
 .site-header .wrap {
@@ -99,6 +112,7 @@ img {
   align-items: center;
   justify-content: space-between;
   height: 72px;
+  width: 100%;
 }
 
 .site-id {
@@ -505,6 +519,8 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
 /* ---------- About Section (Gen Z Editorial) ---------- */
 
 .about {
@@ -660,6 +676,7 @@ img {
   border-top: 1px solid var(--color-border);
   padding: 24px 0;
   margin-top: 60px;
+  width: 100%;
 }
 
 .footer-bar {
@@ -667,6 +684,7 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
   gap: 16px;
   font-family: var(--font-mono);
   font-size: 12px;
@@ -1470,6 +1488,64 @@ img {
   }
 
   .site-nav {
+    gap: 16px;
+  }
+}
+
+/* ---------- Mobile Responsive Optimization ---------- */
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .site-header .wrap {
+    height: auto;
+    padding: 14px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .site-id {
+    font-size: 11px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 48px 0 40px;
+  }
+
+  .about {
+    padding: 40px 0 56px;
+  }
+
+  .about-headline {
+    font-size: 1.6rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .footer-socials {
+    width: 100%;
+    justify-content: flex-start;
     gap: 16px;
   }
 }

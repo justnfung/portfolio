@@ -45,10 +45,30 @@
     sessionStorage.setItem("cursor_y", mouseY);
 
     const el = getOrCreateCursor();
-    if (el && el.style.opacity === "0") {
-      el.style.opacity = "1";
+    // Fade out near window edges (e.g. moving up to top tab bar)
+    if (e.clientY <= 2 || e.clientX <= 2 || e.clientX >= window.innerWidth - 2 || e.clientY >= window.innerHeight - 2) {
+      if (el) el.style.opacity = "0";
+    } else {
+      if (el && el.style.opacity !== "1") el.style.opacity = "1";
     }
   }, { passive: true });
+
+  document.addEventListener("mouseleave", () => {
+    const el = getOrCreateCursor();
+    if (el) el.style.opacity = "0";
+    if (document.body) document.body.classList.remove("cursor-hover", "cursor-active");
+  });
+
+  document.addEventListener("mouseenter", () => {
+    const el = getOrCreateCursor();
+    if (el) el.style.opacity = "1";
+  });
+
+  // Lock native cursor to hidden during clicks and page transitions
+  document.addEventListener("click", () => {
+    document.documentElement.style.cursor = "none";
+    if (document.body) document.body.style.cursor = "none";
+  }, true);
 
   window.addEventListener("beforeunload", () => {
     sessionStorage.setItem("cursor_x", mouseX);
