@@ -1967,7 +1967,7 @@ button.social-icon-btn:active,
     z-index: 100;
     background: rgba(250, 252, 253, 0.96);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: none;
   }
 
   .site-header .wrap {
@@ -1982,6 +1982,7 @@ button.social-icon-btn:active,
     gap: 8px;
     width: 100% !important;
     box-sizing: border-box !important;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .site-id {
