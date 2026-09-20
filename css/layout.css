@@ -2190,3 +2190,231 @@ img {
     gap: 16px;
   }
 }
+
+/* ============================================================
+   RESUME PAGE STYLES
+   ============================================================ */
+
+.resume-page {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.resume-actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resume-title {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.resume-subtitle {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.resume-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #ffffff;
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary:hover {
+  background: #1d3326;
+  border-color: #1d3326;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+/* Resume Paper Sheet */
+.resume-paper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-paper {
+  width: 100%;
+  max-width: 820px;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  padding: 56px 64px;
+  box-sizing: border-box;
+  color: #111111;
+  font-family: 'Times New Roman', Times, 'Nimbus Roman No9 L', serif;
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+.resume-doc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-doc-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px;
+  color: #000000;
+}
+
+.resume-doc-contact {
+  font-size: 13px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resume-doc-contact a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.resume-doc-contact .sep {
+  color: #888888;
+}
+
+.resume-doc-section {
+  margin-top: 20px;
+}
+
+.resume-doc-heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 3px;
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.resume-doc-entry {
+  margin-bottom: 12px;
+}
+
+.resume-entry-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.resume-entry-row strong {
+  font-weight: 700;
+  font-size: 14.5px;
+  color: #000000;
+}
+
+.resume-entry-row em {
+  font-style: italic;
+  font-size: 13.5px;
+  color: #222222;
+}
+
+.resume-entry-date,
+.resume-entry-loc {
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
+  color: #333333;
+}
+
+.resume-bullets {
+  margin: 4px 0 6px 20px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.resume-bullets li {
+  font-size: 13.5px;
+  line-height: 1.42;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.resume-skills-text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
+
+@media (max-width: 768px) {
+  .resume-paper {
+    padding: 32px 20px;
+  }
+  .resume-entry-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .resume-entry-date,
+  .resume-entry-loc {
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  .resume-bullets {
+    margin-left: 16px;
+  }
+}
