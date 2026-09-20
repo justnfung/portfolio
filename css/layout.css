@@ -208,67 +208,6 @@ img {
   text-decoration-color: var(--color-text);
 }
 
-/* Hero Social & Action Buttons */
-
-.hero-social-buttons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.social-icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: #ffffff;
-  border: 1px solid var(--color-border);
-  color: #94a3b8; /* faded light grey */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1;
-  outline: none;
-}
-
-/* Ensure button variant doesn't inherit text underline or green accent from .copy-email-btn */
-button.social-icon-btn,
-.social-icon-btn.copy-email-btn {
-  color: #94a3b8;
-  text-decoration: none;
-  background: #ffffff;
-}
-
-.social-icon-btn svg {
-  display: block;
-  width: 18px;
-  height: 18px;
-  color: inherit;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.social-icon-btn:hover,
-button.social-icon-btn:hover,
-.social-icon-btn.copy-email-btn:hover {
-  color: var(--color-text);
-  border-color: #cbd5e1;
-  background: #fcfcfc;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.social-icon-btn:active,
-button.social-icon-btn:active,
-.social-icon-btn.copy-email-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
 /* Copy Email Button & Floating Tooltip */
 
 .copy-email-wrapper {
@@ -332,6 +271,66 @@ button.social-icon-btn:active,
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+/* Hero Social & Action Buttons (Identical Rounded Cards) */
+
+.hero-social-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.social-icon-btn,
+button.social-icon-btn,
+.social-icon-btn.copy-email-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  color: #94a3b8; /* faded light grey */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.social-icon-btn svg,
+button.social-icon-btn svg,
+.social-icon-btn.copy-email-btn svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  color: inherit;
+  stroke: currentColor;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon-btn:hover,
+button.social-icon-btn:hover,
+.social-icon-btn.copy-email-btn:hover {
+  color: var(--color-text);
+  border-color: #cbd5e1;
+  background: #fcfcfc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.social-icon-btn:active,
+button.social-icon-btn:active,
+.social-icon-btn.copy-email-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .hero-experience {
