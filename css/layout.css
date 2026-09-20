@@ -1162,6 +1162,16 @@ button.social-icon-btn:active,
   gap: 8px;
 }
 
+.footer-home-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-home-link:hover {
+  color: var(--color-accent);
+}
+
 .footer-divider {
   color: var(--color-border);
 }

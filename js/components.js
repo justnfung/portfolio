@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <footer class="site-footer">
         <div class="wrap footer-bar">
           <div class="footer-copy">
-            <span>&copy; 2026 JUSTIN FUNG</span>
+            <a href="${prefix}index.html" class="footer-home-link">&copy; 2026 JUSTIN FUNG</a>
             <span class="footer-divider">&bull;</span>
             <span class="copy-email-wrapper">
               <button class="copy-email-btn footer-email-btn" data-email="justinfung.ca@gmail.com" type="button">
