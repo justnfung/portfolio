@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (headerContainer) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
     
-    const isWork = currentPath === "index.html" || currentPath === "" || (isSubfolder && !currentPath.includes("about"));
-    const isAbout = currentPath === "about.html";
+    const isDesign = currentPath === "design.html";
+    const isWork = (currentPath === "index.html" || currentPath === "" || (isSubfolder && !currentPath.includes("design"))) && !isDesign;
 
     headerContainer.innerHTML = `
       <header class="site-header">
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <nav class="site-nav">
             <a href="${prefix}index.html" class="${isWork ? 'active' : ''}">Work</a>
-            <a href="${prefix}about.html" class="${isAbout ? 'active' : ''}">About</a>
+            <a href="${prefix}design.html" class="${isDesign ? 'active' : ''}">Design</a>
             <a href="https://linkedin.com/in/-justinfung" target="_blank" rel="noopener">LinkedIn</a>
             <a href="#" class="copy-email-trigger" data-email="justinfung.ca@gmail.com">Contact</a>
           </nav>
