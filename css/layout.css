@@ -226,7 +226,7 @@ img {
   border-radius: 10px;
   background: #ffffff;
   border: 1px solid var(--color-border);
-  color: var(--color-text);
+  color: #94a3b8; /* faded light grey */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
@@ -236,14 +236,25 @@ img {
   outline: none;
 }
 
+/* Ensure button variant doesn't inherit text underline or green accent from .copy-email-btn */
+button.social-icon-btn,
+.social-icon-btn.copy-email-btn {
+  color: #94a3b8;
+  text-decoration: none;
+  background: #ffffff;
+}
+
 .social-icon-btn svg {
   display: block;
   width: 18px;
   height: 18px;
-  transition: transform 0.2s ease;
+  color: inherit;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.social-icon-btn:hover {
+.social-icon-btn:hover,
+button.social-icon-btn:hover,
+.social-icon-btn.copy-email-btn:hover {
   color: var(--color-text);
   border-color: #cbd5e1;
   background: #fcfcfc;
@@ -251,7 +262,9 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.social-icon-btn:active {
+.social-icon-btn:active,
+button.social-icon-btn:active,
+.social-icon-btn.copy-email-btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
