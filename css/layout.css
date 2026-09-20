@@ -2023,12 +2023,12 @@ button.social-icon-btn:active,
   }
 
   .hero-name {
-    display: block;
+    display: inline;
     font-family: var(--font-serif);
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 700;
     color: var(--color-accent);
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .hero-paragraph {
