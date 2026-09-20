@@ -36,8 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="${prefix}index.html" class="${isWork ? 'active' : ''}">Work</a>
             <a href="${prefix}design.html" class="${isDesign ? 'active' : ''}">Design</a>
             <a href="${prefix}resume.html" class="${isResume ? 'active' : ''}">Resume</a>
-            <a href="https://linkedin.com/in/-justinfung" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="#" class="copy-email-trigger" data-email="justinfung.ca@gmail.com">Contact</a>
           </nav>
         </div>
       </header>

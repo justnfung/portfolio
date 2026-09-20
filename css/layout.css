@@ -208,11 +208,60 @@ img {
   text-decoration-color: var(--color-text);
 }
 
+/* Hero Social & Action Buttons */
+
+.hero-social-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1;
+  outline: none;
+}
+
+.social-icon-btn svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  color: var(--color-text);
+  border-color: #cbd5e1;
+  background: #fcfcfc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.social-icon-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 /* Copy Email Button & Floating Tooltip */
 
 .copy-email-wrapper {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 }
 
 .copy-email-btn {
@@ -234,7 +283,7 @@ img {
 
 .copy-tooltip {
   position: absolute;
-  bottom: 125%;
+  bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(4px);
   background: #18181b;
@@ -242,7 +291,8 @@ img {
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
-  padding: 4px 10px;
+  letter-spacing: 0.02em;
+  padding: 5px 10px;
   border-radius: 6px;
   white-space: nowrap;
   pointer-events: none;
