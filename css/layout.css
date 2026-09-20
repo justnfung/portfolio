@@ -1982,7 +1982,7 @@ button.social-icon-btn:active,
     gap: 8px;
     width: 100% !important;
     box-sizing: border-box !important;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: none !important;
   }
 
   .site-id {
@@ -2001,7 +2001,10 @@ button.social-icon-btn:active,
     gap: 4px;
     font-size: 11px;
     border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
     padding-top: 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
   }
 
   .site-nav a {
